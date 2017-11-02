@@ -1,11 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using System.Web.Http;
-using DevServices.Services;
+using Devcode.Api.Models;
+using Devcode.Api.Services;
+using Microsoft.AspNetCore.Mvc;
 
-namespace DevServices.Controllers
+namespace Devcode.Api.Controllers
 {
-    public class OrdersController : ApiController
+    [Route("api/orders")]
+    public class OrdersController : Controller
     {
         private readonly OrderMockService _orderService;
 
@@ -20,7 +22,7 @@ namespace DevServices.Controllers
             return orders;
         }
 
-        [Route("api/Orders/{orderId}")]
+        [Route("{orderId}")]
         public async Task<Order> Get(int orderId)
         {
             var order = await _orderService.GetOrderAsync(orderId);

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace DevServices.Services
+namespace Devcode.Api.Models
 {
     public class BasketCheckout
     {

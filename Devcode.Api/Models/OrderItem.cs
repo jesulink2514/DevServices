@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace DevServices.Services
+namespace Devcode.Api.Models
 {
     public class OrderItem
     {

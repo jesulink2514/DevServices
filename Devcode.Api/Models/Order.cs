@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace DevServices.Services
+namespace Devcode.Api.Models
 {
     public class Order
     {

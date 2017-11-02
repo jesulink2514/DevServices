@@ -11,6 +11,8 @@ namespace DevServices
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            //config.MapHttpAttributeRoutes();
+
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(

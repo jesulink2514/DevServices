@@ -1,4 +1,4 @@
-﻿namespace DevServices.Services
+﻿namespace Devcode.Api.Models
 {
     public class CardType
     {
