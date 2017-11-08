@@ -7,6 +7,7 @@ using Devcode.Api.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.StaticFiles.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
@@ -46,6 +47,8 @@ namespace Devcode.Api
 
             app.UseSwagger(Assembly.GetExecutingAssembly(),new SwaggerSettings());
             app.UseSwaggerUi3(new SwaggerUi3Settings());
+
+            app.UseStaticFiles();
 
             app.UseMvc();
         }
